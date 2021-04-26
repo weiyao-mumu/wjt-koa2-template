@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <img src="<%= img%>" alt="">
+    <p>EJS Welcome to <%= title %></p>
+
+    <% if (result) { %>
+    <li><%=result[0].id%>----<%=result[0].username%></li>
+    <li><%=result[1].id%>----<%=result[1].username%></li>
+    <li><%=result[2].id%>----<%=result[2].username%></li>
+    <% } %>
+  </body>
+</html>
